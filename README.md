@@ -70,6 +70,11 @@ ensures the 6-pass version (with cinematic routing) is the one that wins. The ro
 dispatches to the other suite skills — install those too for full function. Then ask
 Claude: **"full editorial pass on this chapter."**
 
+## Related repos
+- [manuscript-editorial-suite](https://github.com/dinaf2026-web/manuscript-editorial-suite) — the critique passes this router dispatches to.
+- [manuscript-cinematic-scene-audit](https://github.com/dinaf2026-web/manuscript-cinematic-scene-audit) — the 6th pass this router adds.
+- [manuscript-editorial-suite-plugin](https://github.com/dinaf2026-web/manuscript-editorial-suite-plugin) — install everything (this 6-pass router included) as one Claude Code plugin.
+
 ## Author
 [@dinaf2026-web](https://github.com/dinaf2026-web)
 
