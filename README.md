@@ -6,6 +6,13 @@ over this chapter"* — this skill decides which critique pass(es) the request n
 runs them in the right order for the book's genre, and hands off. It does not critique
 or score itself; it only routes.
 
+> **Requires the suite skills to dispatch to.** The router itself is just the
+> traffic cop — install the [Manuscript Editorial Suite](https://github.com/dinaf2026-web)
+> (publisher-critique, continuity-audit, fair-play-audit, cinematic-scene-audit,
+> prose-immersion-audit, listing-critique, profile-setup) so there's something to
+> route to. With no `.manuscript/profile.md` and no `manuscript-profile-setup`
+> installed, it falls back to genre-general routing and says so.
+
 ## The six passes it routes to
 
 | Pass | Skill |

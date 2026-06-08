@@ -24,8 +24,11 @@ From the current working directory, walk **up** the parent folders for
 `.manuscript/profile.md`.
 - **Found** → read it. Its `genre` and `passes` decide which passes are even
   applicable (e.g. `fair-play` only for mystery/crime/thriller).
-- **Not found** → invoke `manuscript-profile-setup` to create one, then continue.
-  If the author declines, route with genre-general defaults and say so.
+- **Not found** → if the `manuscript-profile-setup` skill is installed (it ships
+  with the Manuscript Editorial Suite), invoke it to create one, then continue.
+  **If it isn't installed** (this router can run standalone), route with
+  genre-general defaults and say so. The passes this router dispatches to are
+  separate skills — install the suite for full function.
 
 ## The six passes
 

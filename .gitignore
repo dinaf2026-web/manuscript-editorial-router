@@ -1,5 +1,29 @@
-__pycache__/
-*.pyc
+# Per-project editorial data lives in each book's own folder, never in this repo.
+.manuscript/
+
+# Secrets / env
+.env
+.env.*
+*.key
+*.pem
+
+# Manuscript & document files (never commit a draft into the skill repo)
+*.docx
+*.doc
+*.rtf
+*.pdf
+*.epub
+*.mobi
+*.xlsx
+
+# Backups / editor / OS cruft
+*.bak
+*.bak-*
+*~
+*.tmp
 .DS_Store
 Thumbs.db
-.manuscript/
+
+# Python
+__pycache__/
+*.pyc
