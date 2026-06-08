@@ -7,11 +7,18 @@ runs them in the right order for the book's genre, and hands off. It does not cr
 or score itself; it only routes.
 
 > **Requires the suite skills to dispatch to.** The router itself is just the
-> traffic cop — install the [Manuscript Editorial Suite](https://github.com/dinaf2026-web)
-> (publisher-critique, continuity-audit, fair-play-audit, cinematic-scene-audit,
-> prose-immersion-audit, listing-critique, profile-setup) so there's something to
-> route to. With no `.manuscript/profile.md` and no `manuscript-profile-setup`
-> installed, it falls back to genre-general routing and says so.
+> traffic cop. Install order matters — install in this sequence so the 6-pass router
+> wins:
+> 1. the [Manuscript Editorial Suite](https://github.com/dinaf2026-web)
+>    (publisher-critique, continuity-audit, fair-play-audit, prose-immersion-audit,
+>    listing-critique, profile-setup, canon-ledger);
+> 2. the standalone **`manuscript-cinematic-scene-audit`** skill (a separate repo —
+>    cinematic is *not* bundled in the suite);
+> 3. **this router last**, so it overwrites the suite's 5-pass `manuscript-editorial-
+>    router` with this 6-pass version.
+>
+> With no `.manuscript/profile.md` and no `manuscript-profile-setup` installed, it
+> falls back to genre-general routing and says so.
 
 ## The six passes it routes to
 
@@ -57,8 +64,11 @@ Copy-Item .\manuscript-editorial-router "$env:USERPROFILE\.claude\skills" -Recur
 cp -r manuscript-editorial-router ~/.claude/skills/
 ```
 
-The router dispatches to the other suite skills — install those too for full
-function. Then ask Claude: **"full editorial pass on this chapter."**
+**Install this router *after* the suite** — it shares the name
+`manuscript-editorial-router` with the suite's 5-pass copy, so installing it last
+ensures the 6-pass version (with cinematic routing) is the one that wins. The router
+dispatches to the other suite skills — install those too for full function. Then ask
+Claude: **"full editorial pass on this chapter."**
 
 ## Author
 [@dinaf2026-web](https://github.com/dinaf2026-web)
