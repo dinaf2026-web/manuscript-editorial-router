@@ -1,0 +1,13 @@
+{
+  "name": "dina-skills",
+  "owner": {
+    "name": "Dina Farhat"
+  },
+  "plugins": [
+    {
+      "name": "manuscript-editorial-router",
+      "source": "./",
+      "description": "Claude Code skill: the 6-pass dispatcher for the Manuscript Editorial Suite \u2014 routes 'review my book' to the right critique passes for the book's genre."
+    }
+  ]
+}

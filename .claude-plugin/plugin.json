@@ -1,0 +1,15 @@
+{
+  "name": "manuscript-editorial-router",
+  "version": "0.1.0",
+  "description": "Claude Code skill: the 6-pass dispatcher for the Manuscript Editorial Suite \u2014 routes 'review my book' to the right critique passes for the book's genre.",
+  "author": {
+    "name": "Dina Farhat"
+  },
+  "homepage": "https://github.com/dinaf2026-web/manuscript-editorial-router",
+  "repository": "https://github.com/dinaf2026-web/manuscript-editorial-router",
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "skills"
+  ]
+}
